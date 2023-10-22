@@ -1,0 +1,106 @@
+1. Algoritma nedir algoritmanın gerekliliği ve avantajlarını açıklayınız 
+Cevap: Algoritma, belirli bir problemi çözmek veya belirli bir amaca ulaşmak için çözüm yolunun adım adım tasarlanmasıdır algoritma basit açık ve sıralı olmalıdır 
+Cevap 2: Problemin çözümünde hangi yolların kullanılacağı ve elde edilecek sonuçlar noktasında kolaylık sağlar 
+2.Program yazılmadan önce algoritma mı hazırlanmalı yoksa akış diyagramımı çizilmeli 
+Cevap: Öncelikle bir algoritma hazırlanmalı ardından algoritma bir programın iskeleti gibi düşünülebilir temeldir ve herhangi bir programa dilinden bağımsız olmalı ardından durumlara göre değiştirilebilir şekilde bir akış diyagramı çıkarılmalıdır 
+3.Algoritma hazırlanırken dikkat edilmesi gereken hususlar nelerdir 
+Cevap: 
+•	Esnek olmalıdır 
+•	Kullanılacak değerler belirlenmelidir 
+•	Algoritmanın sonunda bir sonuç elde edilmeli 
+•	Basit açık ve sıralı olmalıdır 
+•	Herhangi bir programlama dilinden bağımsız olmalıdır 
+4.Değişken nedir bir programda neden değişkenlere ihtiyaç duyulur 
+Cevap: Herhangi bir yazılım dilinde veri tipinin değerini tutan kapsayıcıya değişken denir int string float double değişken türlerinden bazılarıdır her değişken tipi farklı bir değer tutar örneğin int tam sayı değeri tutarken string metin değerini tutar ya da double virgüllü sayı değerini tutar...
+5.Sayaçlar nerede ve ne için kullanılır 
+Cevap: Programlarda bazı işlemlerin belirli sayıda yapılması ve ya işlenen verilerin sayılması gerekir böyle durumlarda sayaçlar kullanılır 
+6. Aşağıdaki algoritmanın sonucu nedir 
+1. Başla
+2. T=0
+3. S=0
+4. Eğer S>10 ise git 8
+5. T=T+2*S
+6. S=S+2
+7.Git 4
+8.Yaz T
+9.Dur
+Cevap: T = 0 dır 
+
+7. Aşağıdaki algoritmanın sonucu nedir 
+1. Başla
+2. F=1
+3. S=20
+4. Eğer S<1 ise git 9
+5. S=S-3
+6. F=F+S
+7.F+2
+8.Git 4
+9.Yaz F
+10.Dur 
+Cevap: F=20
+8.Girilen 3 Sayıdan en büyüğünü bulan algoritmayı yazınız 
+Cevap:
+Değişkenler
+A = Birinci sayı x
+B = İkinci sayı y
+C = Üçüncü sayı z
+Max = En büyük değerdir.
+
+ALGORİTMA
+ 1 = Başla
+ 2 = S oku
+ 3 = M oku
+ 4 = T oku
+ 5 = A > = B ve A > = C ise s e max değer ver ve 8. adıma git.
+ 6 =  B > = A ve B > = C ise m ye max değer ver ve 8. adıma git.
+ 7 = C ye max değer ver ve 8. adıma git.
+ 8 = max değerini yazdır
+ 9 =  Bitir
+
+
+9.Girilen 3 sayıyı büyükten küçüğe göre sıralayan programın algoritmasını yazınız 
+Cevap:
+1: Başla
+2: Sayıları bul:
+ 1
+ 2
+ 3
+3: Sayıları yaz:
+ 1 
+ 2
+ 3
+4: Sayıları oku:
+ Bir
+ İki
+ Üç
+5: Sıralama yap:
+1<2<3
+6: Sonucu bak
+1<2<3
+7: Sonucu yaz
+8: Bitir
+
+
+10. 1-99 arasında tek ve çift sayıların toplamlarını ve çarpımlarını ayrı ayrı hesaplayan programın algoritmasını yazınız 
+Cevap:
+Toplam
+1-Başla
+2-Sayaç=1,Ttek=0,Tçift=0
+3-Ttek=Ttek+sayaç
+4-Tçift=Tçift+sayaç+1
+5-Eğer sayı =99 ise 8.adıma git
+6-sayac=sayac+2
+7-3.adıma dön
+8-Ttek ve Tçift yaz
+9-Dur
+Ttek=tek sayıların toplamı,Tçift=çift sayıların toplamı
+Çarpım
+1. Tek çarpım = 1
+2. Çift çarpım = 1
+3 i= 1
+4. i<= 99 yap: a. Eğer i tekse: i. Tek çarpım = Tek çarpım * i b. Eğer i çiftse: i. Çift çarpım = Çift çarpım * i c. i = i + 1
+5.Tek çarpımı ve Çift çarpımı yazdır 
+6.Dur
+
+
+
