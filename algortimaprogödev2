@@ -1,0 +1,85 @@
+1.Soru Aşağıdaki C programını inceleyiniz. Programın çıktısında 8.00 sonucunu vermektedir. Ondalık olarak tanımlanan “a” ve “b” değerlerini kullanıcıdan isteyen C programını yazınız.
+Cevap:
+#include <stdio.h>
+int main()
+ {
+     float sayi1, sayi2, toplam;
+
+     printf("İlk sayıyı girin: ");
+     scanf("%f", &sayi1);
+
+     printf("İkinci sayıyı girin: ");
+     scanf("%f", &sayi2);
+
+     toplam = sayi1 + sayi2;
+     
+     printf("Girdiğiniz sayıların toplamı: %f\n", toplam);
+
+     return 0;
+
+}
+2.Soru
+Cevabı:Merhaba 
+-Nasılsın
+
+
+
+
+
+
+
+3.SoruAşağıdakilerden hangisi yanlış değişken ismidir?
+a. Maas:
+ b. Maas23
+ c. maas$
+ d. 123_4
+ e. MAAS
+ f. double
+ g. maas_$ 
+h. İf_123
+ i. Maas_23
+ j. le 
+k. 23_maas 
+l. İnt
+Cevap: F ve L yanlıştır
+4.Soru Tamsayı olarak tanımlanmış “toplam” değişkenini doğru bir şekilde ifade ediniz
+Cevap : İnt toplam ;
+5.Soru Kullanıcıdan iki tamsayı alarak bu sayıların toplamını bulup ekranda gösteren bir C program yazınız
+Cevap:
+#include <stdio.h>
+int main()
+ {
+     int sayi1, sayi2, toplam;
+     printf("İlk tamsayıyı girin: ");
+     scanf("%d", &sayi1);
+     printf("İkinci tamsayıyı girin: ");
+     scanf("%d", &sayi2);
+     toplam = sayi1 + sayi2;
+     printf("Girdiğiniz sayıların toplamı: %d\n", toplam);
+     return 0;
+}
+
+6.Soru  Aşağıdaki seçeneklerden hangisinde tamsayı olarak tanımlanan toplam değişkenine ilk değer olarak 0 atanmıştır?
+a. Toplam:integer=0; 
+b. Toplam=0, int;
+ c. İnt toplam = 0;
+ d. İnt=0, toplam;
+Cevap: C seçeneği 
+
+7.Soru  Aşağıdaki komutlar yürütüldüğünde a, b ve c’nin son değerleri ne olur?
+İnt a,b,c; 
+a=8; b=15;
+ c=a/b+b/a*2;
+ b=b/2;
+ a=a+3;
+Cevap:
+A=11
+B=7.5
+C=4,2833333333333
+8.Soru Program Çıktısı 
+Cevap :
+ 27.38
+ -28.4
+ 25
+ 290
+
