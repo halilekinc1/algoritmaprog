@@ -1,0 +1,103 @@
+1.	“Fibonacci Serisi” elemanları (sayıları) aşağıdaki gibidir: (50 puan) 1, 1, 2, 3, 5, 8, 13, 21, 34,…. Buna göre klavyeden girilen terim sayısına (N) göre Fibonacci Serisi’nin ilk N terimini bulup ekrana yazan program nedir? Not: Fibonacci Serisi’ne dikkat edilirse; her terim, kendinden önce gelen iki terimin toplamına eşittir. Bu nedenle üç tane değişken tanımlanmalıdır. Değişken isimleri: Birinci terim: Terim 1 İkinci terim: Terim 2 Üçüncü terim: Terim 3 Olarak oluşturulursa terimler arasındaki ilişki Terim3 = Terim1+Terim2 şeklinde olacaktır. Üçüncü terim üretildikten sonra da bir sonraki iterasyonda yeni Terim3’ün doğru olarak oluşabilmesi için Terim1Terim2 ve Terim2Terim3 atamaları yapılmalıdır. (N=7 seçiniz)
+Cevap : #include <stdio.h>
+
+void fibonacciSerisi(int n) {
+    int terim1 = 1, terim2 = 1, terim3;
+    
+    printf("Fibonacci Serisi'nin ilk %d terimi: ", n);
+
+    if (n >= 1) {
+        printf("%d ", terim1);
+    }
+    if (n >= 2) {
+        printf("%d ", terim2);
+    }
+
+    for (int i = 3; i <= n; ++i) {
+        terim3 = terim1 + terim2;
+        printf("%d ", terim3);
+
+        terim1 = terim2;
+        terim2 = terim3;
+    }
+
+    printf("\n");
+}
+
+int main() {
+    int N;
+
+    // Kullanıcıdan N sayısını alınması
+    printf("Fibonacci serisinin kac terimini bulmak istiyorsunuz? ");
+    scanf("%d", &N);
+
+    // Fibonacci serisini hesapla ve ekrana yazdır
+    fibonacciSerisi(N);
+
+    return 0;
+}
+
+
+
+
+2. Kullanıcının seçimine göre haftanın gününü ekrana yazdıran programı switch ifadesini kullanarak yapınız
+Cevabı: #include <stdio.h>
+
+int main() {
+    int secim;
+
+    // Kullanıcıdan seçim yapmasını iste
+    printf("Lutfen 1-7 arasinda bir sayi giriniz (1=Pazartesi, 2=Sali, ..., 7=Pazar):\n");
+    scanf("%d", &secim);
+
+    // Switch ifadesi kullanarak haftanın gününü yazdır
+    switch (secim) {
+        case 1:
+            printf("Pazartesi\n");
+            break;
+        case 2:
+            printf("Sali\n");
+            break;
+        case 3:
+            printf("Carsamba\n");
+            break;
+        case 4:
+            printf("Persembe\n");
+            break;
+        case 5:
+            printf("Cuma\n");
+            break;
+        case 6:
+            printf("Cumartesi\n");
+            break;
+        case 7:
+            printf("Pazar\n");
+            break;
+        default:
+            printf("Gecersiz bir secim yaptiniz.\n");
+    }
+
+    return 0;
+}
+
+
+3. Kullanıcıdan 3 tam sayı girmesini isteyiniz ve girilen tam sayılardan büyük olanı ekranda yazdırınız
+Cevap: #include <stdio.h>
+int main() {
+    int sayi1, sayi2, sayi3;
+
+    // Kullanıcıdan tam sayıları girmesini iste
+    printf("Lutfen uc tam sayi giriniz:\n");
+    scanf("%d %d %d", &sayi1, &sayi2, &sayi3);
+
+    // En büyük sayıyı bul ve ekrana yazdır
+    if (sayi1 >= sayi2 && sayi1 >= sayi3) {
+        printf("En buyuk sayi: %d\n", sayi1);
+    } else if (sayi2 >= sayi1 && sayi2 >= sayi3) {
+        printf("En buyuk sayi: %d\n", sayi2);
+    } else {
+        printf("En buyuk sayi: %d\n", sayi3);
+    }
+
+    return 0;
+}
