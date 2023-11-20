@@ -27,11 +27,11 @@ void fibonacciSerisi(int n) {
 int main() {
     int N;
 
-    // Kullanıcıdan N sayısını alınması
+    
     printf("Fibonacci serisinin kac terimini bulmak istiyorsunuz? ");
     scanf("%d", &N);
 
-    // Fibonacci serisini hesapla ve ekrana yazdır
+    
     fibonacciSerisi(N);
 
     return 0;
@@ -46,11 +46,11 @@ Cevabı: #include <stdio.h>
 int main() {
     int secim;
 
-    // Kullanıcıdan seçim yapmasını iste
+    
     printf("Lutfen 1-7 arasinda bir sayi giriniz (1=Pazartesi, 2=Sali, ..., 7=Pazar):\n");
     scanf("%d", &secim);
 
-    // Switch ifadesi kullanarak haftanın gününü yazdır
+    
     switch (secim) {
         case 1:
             printf("Pazartesi\n");
@@ -86,11 +86,11 @@ Cevap: #include <stdio.h>
 int main() {
     int sayi1, sayi2, sayi3;
 
-    // Kullanıcıdan tam sayıları girmesini iste
+    
     printf("Lutfen uc tam sayi giriniz:\n");
     scanf("%d %d %d", &sayi1, &sayi2, &sayi3);
 
-    // En büyük sayıyı bul ve ekrana yazdır
+    
     if (sayi1 >= sayi2 && sayi1 >= sayi3) {
         printf("En buyuk sayi: %d\n", sayi1);
     } else if (sayi2 >= sayi1 && sayi2 >= sayi3) {
